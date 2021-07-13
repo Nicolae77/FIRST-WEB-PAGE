@@ -1,0 +1,16 @@
+@media(max-width: 768px){
+
+    header h1 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #features{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+    #features .feature-img, #features .feature-copy{
+        width: 100%;
+    }
+}
