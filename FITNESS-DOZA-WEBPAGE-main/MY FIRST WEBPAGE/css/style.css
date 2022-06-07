@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**** NAV BAR ****/
+#navbar {
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 250px;
+    transition: all 0.5s ease-in-out;
+}
+#navbar.active {
+    background-color: black;
+    padding: 30px 50px;
+    position: fixed;
+    width: 100%;
+}
+.logo, .menu-bar {
+    display: inline-block;
+}
+.logo a {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.menu-bar ul {
+    list-style: none;
+
+}
+
+.menu-bar ul li {
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+/**** HEADER SECTION ****/
+header {
+    text-align: center;
+    background-color: orange;
+    
+    padding-bottom: 100px;
+    background-image: url(../img/header-image.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: white
+}
+header p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 25px;
+}
+header .header-button {
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid rgb(0, 174, 218);
+    background-color: rgb(0, 174, 218);
+    text-decoration:  none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding:20px 42px;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+}
+header .header-button:hover {
+    color: #00aeda;
+    background: #222225;
+    border-color: #222225;
+}
+/**** Training SECTION ****/
+#training {
+    text-align: center;
+    background-color: #2e2e30;
+    color: white;
+    padding-top: 100px;
+    
+}
+#training > h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#training > p {
+    font-size: 20px;
+    padding: 20px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+.iconBox {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.iconContainer {
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.iconContainer .icon {
+    background-color: #00aeda;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.iconContainer .icon i{
+    font-size: 35px;
+    color: white;
+    line-height: 60px;
+}
+.iconContainer h4 {
+    margin-bottom: 20px;
+}
+.iconContainer p {
+    font-size: 15px;
+    color: #A1A1A1;
+}
+/**** Promise  SECTION ****/
+#promise {
+    text-align: center;
+    padding: 40px;
+}
+#promise > h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#promise > p {
+    font-size: 24px;
+    padding: 20px;
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.promiseLeft, .promiseRight {
+    width: 25%;
+    display: inline-block;
+    padding-top: 50px;
+}
+.promiseLeft .promiseContainer {
+    text-align: right;
+    margin-bottom: 50px;
+    
+}
+.promiseRight .promiseContainer {
+    text-align: left;
+    margin-bottom: 50px; 
+}
+.promiseRight .promiseContainer p, .promiseLeft .promiseContainer p {
+    color: #A1A1A1;
+    font-size: 17px;
+}
+.promiseLeft .promiseContainer i, .promiseRight .promiseContainer i{
+    color: #00aeda;
+    display: inline-block;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.trainer {
+    display: inline-block;
+    width: 40%;
+}
+.trainer img {
+    max-width: 80%;
+}
+/**** Features  SECTION ****/
+#features {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 100px; 
+}
+.feature-copy h2 {
+    font-size: 37px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.feature-img {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.feature-img img {
+    max-width: 100%;
+}
+.feature-img, .feature-copy {
+    width: 50%;
+}
+.feature-copy p {
+    font-size: 16px;
+    color: #A1A1A1;
+    font-style: oblique;
+    font-weight: bold;
+}
+.feature-copy ul {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+.feature-copy ul li {
+    font-size: 16px;
+    color: #A1A1A1;
+    font-style: oblique;
+    margin-bottom: 15px;
+}
+/**** Footer  SECTION ****/
+footer {
+    background-color: #222225;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer h4 {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.about-trainer, .footer-social, .footer-contact {
+    width: 28%;
+    text-align: center;
+}
+.about-trainer p{
+    color: #A1A1A1;
+    font-size: 15px;
+}
+.footer-social ul {
+    list-style: none;
+}
+.footer-social ul li {
+    margin-bottom: 5px;
+}
+.footer-social ul li a {
+    text-decoration: none;
+    color: #00aeda;
+}
+.footer-contact p {
+    color: #A1A1A1;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.footer-contact a {
+    text-decoration: none;
+    color: #00aeda;
+}
